@@ -54,7 +54,7 @@ const MadeBy = (props) => {
     const { fadeStyle, ...fadeProps } = useFade();
 
     return (
-        <a target="_new" href={props.url} >
+        <a target="_new" href={props.destination} >
             <div className="MadeBy" style={{...fadeStyle, ...defaultMadeByStyles}}{...fadeProps}>
 
                 <img style={defaultImgStyles} src={props.src ? props.src : ""}></img>

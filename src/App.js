@@ -20,7 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
-      < MadeBy src="https://ya332.github.io/assets/img/headshot_400x300.jpg"  url="https://ya332.github.io" text="Made with ☕ by Yigit"/>
+      < MadeBy src="https://ya332.github.io/assets/img/headshot_400x300.jpg"  destination="https://ya332.github.io" text="Made with ☕ by Yigit"/>
     </div>
   );
 }
