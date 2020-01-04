@@ -54,11 +54,11 @@ const MadeBy = (props) => {
     const { fadeStyle, ...fadeProps } = useFade();
 
     return (
-        <a target="_new" href={props.destination} >
-            <div className="MadeBy" style={{...fadeStyle, ...defaultMadeByStyles}}{...fadeProps}>
+        <a className="MadeBy__a" target="_new" href={props.destination} >
+            <div className="MadeBy__div" style={{...fadeStyle, ...defaultMadeByStyles}}{...fadeProps}>
 
-                <img style={defaultImgStyles} src={props.src ? props.src : ""}></img>
-                <p style={defaultPStyles}>{props.text}</p>
+                <img className="MadeBy__img" style={defaultImgStyles} src={props.src ? props.src : ""}></img>
+                <p className="MadeBy__p" style={defaultPStyles}>{props.text}</p>
             </div >
         </a>
     )
