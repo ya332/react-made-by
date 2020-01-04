@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MadeBy from './components/MadeBy';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           Learn React
         </a>
       </header>
+      < MadeBy src="https://ya332.github.io/assets/img/headshot_400x300.jpg"  url="https://ya332.github.io" text="Made with ☕ by Yigit"/>
     </div>
   );
 }
