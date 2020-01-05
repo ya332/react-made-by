@@ -139,14 +139,27 @@ The component is written in ES6 and uses [Webpack](http://webpack.github.io/) as
 
 #### Set up instructions
 
+You can add the `index.js` code to your project as a component, or go [here](https://stackblitz.com/edit/react-vjhinx?file=src%2FMadeBy.js) or you can link a test `create-react-app` project to `react-made-by` library. To do the link, follow these steps:
+Given that you are at `/app/` and `react-made-by` is at this directory `/app/react-made-by`:
+```bash
+npx create-react-app test-react-made-by
+cd test-react-made-by
+npm install
+npm link
+cd ../react-made-by
+npm link test-react-made-by
+```
+If you get Invalid Hooks Warning, check this (link)[https://reactjs.org/warnings/invalid-hook-call-warning.html] and do `npm link ../test-react-made-by/node_modules/react` from `/app/react-made-by`
+
+
+Doing the following will watch the files, but not run a webpack-dev-server on a browser, so you can't see your changes. 
 ```
 git clone git@github.com:ya332/react-made-by.git
 cd react-made-by
 npm install
 npm run start
 ```
-
-open [http://localhost:3000](http://localhost:3000)
+open [http://localhost:3000/build](http://localhost:3000/build)
 
 ### Contributing
 
