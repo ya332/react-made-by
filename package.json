@@ -29,13 +29,13 @@
 	],
 	"homepage": "https://github.com/ya332/react-made-by#readme",
 	"main": "build/index.js",
-	"unpkg": "build/index.min.js",
+	"unpkg": "build/index.js",
 	"publishConfig": {
 		"access": "public"
 	},
 	"peerDependencies": {
-		"react": "^16.0.0",
-		"react-dom": "^16.0.0",
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0",
 		"webpack": "^2.6.1"
 	},
 	"devDependencies": {
@@ -53,8 +53,8 @@
 		"node-sass": "^4.13.0",
 		"path": "^0.12.7",
 		"prop-types": "^15.6.0",
-		"react": "^16.0.0",
-		"react-dom": "^16.0.0",
+		"react": "^16.8.0",
+		"react-dom": "^16.8.0",
 		"webpack": "^4.5.0",
 		"webpack-cli": "^3.3.10"
 	},
