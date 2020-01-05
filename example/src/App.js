@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import MadeBy from "react-made-by";
 
 function App() {
   return (
@@ -16,9 +17,10 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Learn Now
         </a>
       </header>
+      <MadeBy src="https://ya332.github.io/assets/img/headshot_400x300.jpg" destination="https://ya332.github.io"/>
     </div>
   );
 }
