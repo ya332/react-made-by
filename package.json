@@ -41,7 +41,7 @@
 	"devDependencies": {
 		"babel-cli": "^6.24.1",
 		"babel-core": "^6.24.1",
-		"babel-loader": "^7.0.0",
+		"babel-loader": "^7.1.5",
 		"babel-plugin-transform-object-rest-spread": "^6.23.0",
 		"babel-plugin-transform-react-jsx": "^6.24.1",
 		"babel-preset-env": "^1.6.1",
@@ -60,7 +60,7 @@
 	},
 	"scripts": {
 		"test": "echo \"Error: no test specified\" && exit 1",
-		"start": "webpack --watch",
+		"start": "webpack-dev-server --config webpack-dev-server.config.js --progress --inline --colors",
 		"build": "webpack --config webpack.config.js --mode production"
 	},
 	"eslintConfig": {
@@ -77,5 +77,8 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
+	},
+	"dependencies": {
+		"webpack-dev-server": "^3.7.1"
 	}
 }
