@@ -56,7 +56,7 @@ const MadeBy = (props) => {
         <a className="MadeBy__a" target="_new" href={props.destination} >
             <div className="MadeBy__div" style={{...fadeStyle, ...defaultMadeByStyles}}{...fadeProps}>
 
-                <img className="MadeBy__img" style={defaultImgStyles} src={props.src ? props.src : ""}></img>
+                <img className="MadeBy__img" style={defaultImgStyles} imgSrc={props.imgSrc ? props.imgSrc : ""}></img>
                 <p className="MadeBy__p" style={defaultPStyles}>{props.text ? props.text : "Made with lots of ☕!"}</p>
             </div >
         </a>
@@ -64,7 +64,7 @@ const MadeBy = (props) => {
 }
 
 MadeBy.defaultProps = {
-    madebyStyles: defaultMadeByStyles,
+    madebystyles: defaultMadeByStyles,
     imgstyles: defaultImgStyles,
     pstyles: defaultPStyles
 };
