@@ -2,7 +2,7 @@
 	"name": "react-made-by",
 	"version": "0.5.0",
 	"description": "React component to create a 'made by <name>' tag",
-	"files":[ "build" ],
+	"files":[ "build/index.js" ],
 	"author": {
 		"name": "Yigit Alparslan",
 		"email": "alparslanyigitcan@gmail.com"
