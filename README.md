@@ -3,7 +3,7 @@
 [![MIT](https://img.shields.io/npm/l/react-made-by.svg?style=flat-square)](https://github.com/ya332/react-made-by/blob/master/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
 [![npm downloads](https://img.shields.io/npm/dm/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
-[![build status](https://img.shields.io/travis/ya332/react-made-by.svg?style=flat-square)](https://travis-ci.org/ya332/react-made-by)
+[![build status](https://travis-ci.org/ya332/react-made-by.svg?branch=master)](https://travis-ci.org/ya332/react-made-by)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-made-by/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
 <a href="https://codeclimate.com/github/ya332/react-made-by/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
@@ -37,14 +37,12 @@ npm install --save react-made-by
 make sure you have installed the **peer dependencies** as well with below versions
 
 ```
-react: ^16.3.1,
-react-dnd: ^5.0.0
-react-dnd-html5-backend: ^3.0.2
-react-dom": ^16.3.1
+react: ^16.8.0,
+react-dom": ^16.8.0
 
 ```
 
-It is, however, also available to be used separately (`dist/MadeBy.min.js`). If you prefer this method remember to include [ReactDND](https://github.com/gaearon/react-dnd) as a dependancy. Refer to the [example](https://stackblitz.com/edit/react-made-by) to see how this works.
+It is, however, also available to be used separately (`build/index.js`). This file is hosted [here](https://unpkg.com/react-made-by@0.1.0/build/index.js)
 
 ### Usage
 
