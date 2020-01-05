@@ -2,11 +2,8 @@
 
 [![MIT](https://img.shields.io/npm/l/react-made-by.svg?style=flat-square)](https://github.com/ya332/react-made-by/blob/master/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
-[![Dependency Status](https://david-dm.org/yahoo/react-dnd-touch-backend.svg)](https://david-dm.org/yahoo/react-dnd-touch-backend)
-[![devDependency Status](https://david-dm.org/yahoo/react-dnd-touch-backend/dev-status.svg)](https://david-dm.org/yahoo/react-dnd-touch-backend#info=devDependencies)
 [![npm downloads](https://img.shields.io/npm/dm/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
 [![build status](https://img.shields.io/travis/ya332/react-made-by.svg?style=flat-square)](https://travis-ci.org/ya332/react-made-by)
-[![Greenkeeper badge](https://badges.greenkeeper.io/ya332/react-made-by.svg)](https://greenkeeper.io/)
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-made-by/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
 <a href="https://codeclimate.com/github/ya332/react-made-by/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
@@ -100,9 +97,9 @@ If you have ideas to make this component better, [I'd love to hear](https://gith
 
 | Option                              | Type     | Default            | Description                                                                    |
 | ----------------------------------- | -------- | ------------------ | ------------------------------------------------------------------------------ |
-| [`text`](#tagsOption)               | `String` | `Made with coffee` | Displayed text                                                                 |
+| [`text`](#tagsOption)               | `String` | `Made with lots of ☕!` | Text to be displayed                                                                 |
 | [`destination`](#suggestionsOption) | `String` | `""`               | URL string. When clicked on the tag, a new tab with this destination url opens |
-| [`src`](#delimiters)                | `String` | `""`               | src of the image displayed on the tag.                                         |
+| [`src`](#delimiters)                | `String` | `""`               | src of the image displayed on the component.                                         |
 
 Sample Usage:
 
