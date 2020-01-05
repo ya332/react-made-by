@@ -11,7 +11,7 @@
 <a href="https://codeclimate.com/github/ya332/react-made-by/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
 <a href="https://codeclimate.com/github/ya332/react-made-by/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
 
-React-Made-By is a simple tagging component ready to drop in your React projects.
+React-Made-By is a simple component to display author name at the bottom right corner of a page such as this "Made with ☕ by Me" alongside with an image.
 
 ### Features
 
