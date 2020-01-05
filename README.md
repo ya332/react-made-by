@@ -73,7 +73,7 @@ function App() {
 				</a>
 			</header>
 			<MadeBy
-				imgSrc="https://ya332.github.io/assets/img/headshot_400x300.jpg"
+				imgsrc="https://ya332.github.io/assets/img/headshot_400x300.jpg"
 				destination="https://ya332.github.io"
 				text="Made with ☕ by Yigit"
 			/>
@@ -98,7 +98,7 @@ If you have ideas to make this component better, [I'd love to hear](https://gith
 | ----------------------------------- | -------- | ------------------ | ------------------------------------------------------------------------------ |
 | [`text`](#tagsOption)               | `String` | `Made with lots of ☕!` | Text to be displayed                                                                 |
 | [`destination`](#suggestionsOption) | `String` | `""`               | URL string. When clicked on the tag, a new tab with this destination url opens |
-| [`imgSrc`](#delimiters)                | `String` | `""`               | src of the image displayed on the component.                                         |
+| [`imgsrc`](#delimiters)                | `String` | `""`               | src of the image displayed on the component.                                         |
 
 Sample Usage:
 

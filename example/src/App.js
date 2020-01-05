@@ -20,7 +20,7 @@ function App() {
           Learn Now
         </a>
       </header>
-      <MadeBy src="https://ya332.github.io/assets/img/headshot_400x300.jpg" destination="https://ya332.github.io"/>
+      <MadeBy imgsrc="https://ya332.github.io/assets/img/headshot_400x300.jpg" text="Hello from other side" destination="https://ya332.github.io"/>
     </div>
   );
 }
