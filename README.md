@@ -7,6 +7,7 @@
 [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://github.com/prettier/prettier)
 <a href="https://codeclimate.com/github/ya332/react-made-by/maintainability"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/maintainability" /></a>
 <a href="https://codeclimate.com/github/ya332/react-made-by/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
 
 React-Made-By is a simple component to display author name at the bottom right corner of a page such as this "Made with ☕ by Me" alongside with an image.
 
