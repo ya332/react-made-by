@@ -1,87 +1,27 @@
-const webpack = require("webpack");
-const ExtractTextPlugin = require("extract-text-webpack-plugin");
-const pkg = require("./package.json");
-const path = require("path");
-const libraryName = pkg.name;
+var path = require("path");
 module.exports = {
-	entry: path.join(__dirname, "./src/index.js"),
+	entry: "./src/index.js",
 	output: {
-		path: path.join(__dirname, "./dist"),
-		filename: "myUnflappableComponent.js",
-		library: libraryName,
-		libraryTarget: "umd",
-		publicPath: "/dist/",
-		umdNamedDefine: true
-	},
-	plugins: [
-		new ExtractTextPlugin({
-			filename: "myUnflappableComponent.css"
-		})
-	],
-	node: {
-		net: "empty",
-		tls: "empty",
-		dns: "empty"
+		path: path.resolve(__dirname, "build"),
+		filename: "index.js",
+		libraryTarget: "commonjs2" // THIS IS THE MOST IMPORTANT LINE! :mindblow: I wasted more than 2 days until realize this was the line most important in all this guide.
 	},
 	module: {
 		rules: [
 			{
-				test: /\.(png|svg|jpg|gif)$/,
-				use: [
-					{
-						loader: "url-loader",
-						options: {
-							fallback: "file-loader",
-							name: "[name][md5:hash].[ext]",
-							outputPath: "assets/",
-							publicPath: "/assets/"
-						}
-					}
-				]
-			},
-			{
-				test: /\.*css$/,
-				use: ExtractTextPlugin.extract({
-					fallback: "style-loader",
-					use: ["css-loader", "sass-loader"]
-				})
-			},
-			{
-				test: /\.(js|jsx)$/,
-				use: ["babel-loader"],
+				test: /\.js$/,
 				include: path.resolve(__dirname, "src"),
-				exclude: /node_modules/
-			},
-			{
-				test: /\.(eot|ttf|woff|woff2)$/,
-				use: ["file-loader"]
-			},
-			{
-				test: /\.(pdf|doc|zip)$/,
-				use: ["file-loader"]
+				exclude: /(node_modules|bower_components|build)/,
+				use: {
+					loader: "babel-loader",
+					options: {
+						presets: ["env"]
+					}
+				}
 			}
 		]
 	},
-	resolve: {
-		alias: {
-			react: path.resolve(__dirname, "./node_modules/react"),
-			"react-dom": path.resolve(__dirname, "./node_modules/react-dom"),
-			assets: path.resolve(__dirname, "assets")
-		}
-	},
 	externals: {
-		// Don't bundle react or react-dom
-		react: {
-			commonjs: "react",
-			commonjs2: "react",
-			amd: "React",
-			root: "React"
-		},
-		"react-dom": {
-			commonjs: "react-dom",
-			commonjs2: "react-dom",
-			amd: "ReactDOM",
-			root: "ReactDOM"
-		}
+		react: "commonjs react" // this line is just to use the React dependency of our parent-testing-project instead of using our own React.
 	}
 };
