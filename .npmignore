@@ -4,5 +4,4 @@ webpack.local.config.js
     .gitignore
 /example
 /public
-README.md
-demo.png
+/build
