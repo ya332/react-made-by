@@ -11,10 +11,10 @@
 <a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
 React-Made-By is a simple component to display author name at the bottom right corner of a page such as this "Made with ☕ by Me" alongside with an image.
 
-<img sr="/assets/demo.png" alt="Demo tag" width="400px" height="100px">
+<img src="./assets/tag.png" alt="Demo tag" width="400" height="100" >
 ### Features
 
-- Displays user's text at the bottom right corner of the page
+- Displays user's text at the bottom right corner (it defaults to right but can be changed to be left ) of the page
 - Displays image
 - Links to a destination url when the component is clicked.
 
