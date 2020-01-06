@@ -78,8 +78,5 @@
 			"last 1 firefox version",
 			"last 1 safari version"
 		]
-	},
-	"dependencies": {
-		"webpack-dev-server": "^3.7.1"
 	}
 }
