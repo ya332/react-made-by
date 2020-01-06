@@ -1,5 +1,3 @@
-# React-Made-By
-
 [![MIT](https://img.shields.io/npm/l/react-made-by.svg?style=flat-square)](https://github.com/ya332/react-made-by/blob/master/LICENSE)
 [![NPM Version](https://img.shields.io/npm/v/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
 [![npm downloads](https://img.shields.io/npm/dm/react-made-by.svg?style=flat-square)](https://www.npmjs.com/package/react-made-by)
@@ -9,9 +7,13 @@
 <a href="https://codeclimate.com/github/ya332/react-made-by/test_coverage"><img src="https://api.codeclimate.com/v1/badges/b9edb2810b02bb845d20/test_coverage" /></a>
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-green.svg)](https://github.com/ya332/react-made-by/blob/master/CONTRIBUTING.md)
 <a href="https://www.buymeacoffee.com/ya332" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/arial-yellow.png" alt="Buy Me A Coffee" style="height: 51px !important;width: 217px !important;" ></a>
+
+# React-Made-By
+
 React-Made-By is a simple component to display author name at the bottom right corner of a page such as this "Made with ☕ by Me" alongside with an image.
 
-<img src="./assets/tag.png" alt="Demo tag" width="400" height="100" >
+<img src="./assets/tag.png" alt="Demo tag" width="400" height="100">
+
 ### Features
 
 - Displays user's text at the bottom right corner (it defaults to right but can be changed to be left ) of the page
