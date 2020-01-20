@@ -56,7 +56,7 @@ Here's a sample implementation that creates the "Made By {NAME}" the component o
 import React from "react";
 import logo from "./logo.svg";
 import "./App.css";
-import MadeBy from "./components/MadeBy";
+import MadeBy from "react-made-by";
 
 function App() {
 	return (
