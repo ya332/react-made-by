@@ -1,6 +1,6 @@
 {
 	"name": "react-made-by",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "React component to create a 'made by <name>' tag",
 	"files":[ "build/index.js" ],
 	"author": {
