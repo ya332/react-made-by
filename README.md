@@ -28,7 +28,7 @@ Because I was looking for an excuse to build a standalone component and publish 
 
 ![img](./assets/demo.png)
 
-Check it out [here](https://stackblitz.com/edit/react-vjhinx?file=src%2FMadeBy.js)
+Check it out [here](https://stackblitz.com/edit/react-made-by?file=App.js)
 
 ### Installation
 
