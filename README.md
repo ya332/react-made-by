@@ -28,7 +28,7 @@ Because I was looking for an excuse to build a standalone component and publish 
 
 ![img](./assets/demo.png)
 
-Check it out [here](https://stackblitz.com/edit/react-vjhinx?file=src%2FMadeBy.js)
+Check it out [here](https://stackblitz.com/edit/react-made-by?file=App.js)
 
 ### Installation
 
@@ -79,6 +79,10 @@ function App() {
 				imgsrc="https://ya332.github.io/assets/img/headshot_400x300.jpg"
 				destination="https://ya332.github.io"
 				text="Made with ☕ by Yigit"
+				imgfirst={true}
+				position="left"
+				style={{zIndex:'1'}}
+
 			/>
 		</div>
 	);
@@ -102,38 +106,40 @@ If you have ideas to make this component better, [I'd love to hear](https://gith
 | [`text`](#tagsOption)               | `String` | `Made with lots of ☕!` | Text to be displayed                                                                 |
 | [`destination`](#suggestionsOption) | `String` | `""`               | URL string. When clicked on the tag, a new tab with this destination url opens |
 | [`imgsrc`](#delimiters)                | `String` | `""`               | src of the image displayed on the component.                                         |
+| [`position`](#delimiters)                | `String` | `"right"`               | Location of the tag on the screen. Potential values are 'left' and 'right' |
+| [`imgfirst`](#delimiters)                | `Boolean` | `true`               | When set to true, the component displays img and then p element. When set to false, it displays the p and then img element. Potential values are true and false |
+| [`style`](#delimiters)                | `JSON Object` | `DefaultMadeByStyles (for more info check the source code)`               | You can pass any CSS field via style, and it will override. For example, style={{marginTop:'34234px'}} |
 
 Sample Usage:
 
 ```js
 <MadeBy
-	imgSrc="https://ya332.github.io/assets/img/headshot_400x300.jpg"
+	imgsrc="https://ya332.github.io/assets/img/headshot_400x300.jpg"
 	destination="https://ya332.github.io"
 	text="Made with ☕ by Yigit"
+	imgfirst={true}
+	position="left"
+	style={{zIndex:'1'}}
 />
 ```
 
 ### Styling
 
-It is very easy to customize the look of the component the way you want it. By default, the component `<MadeBy>` provides the following classes with which you can style -
+It is very easy to customize the look of the component the way you want it. If you need to set your own class names on the component, you may pass css attributes via style field.
 
-- `MadeBy__a`
-- `MadeBy__img`
-- `MadeBy__div`
-- `MadeBy__p`
 
-If you need to set your own class names on the component, you may pass in
-a `classNames` prop.
 
 ```js
+...
   <MadeBy
-    className={{
-    	a: 'aClass',
-		img: 'imgClass',
-		div: 'divClass',
-		p: 'pClass',
-    }}
-    ...>
+  	...
+    style={{
+		zIndex: '1231',
+		paddingEnd:'43px',
+		marginTop:'231231px'
+	}}
+	...
+...
 ```
 
 ### Dev
@@ -141,8 +147,9 @@ a `classNames` prop.
 The component is written in ES6 and uses [Webpack](http://webpack.github.io/) as its build tool.
 
 #### Set up instructions
+Easiest way is to go to [here](https://stackblitz.com/edit/react-vjhinx?file=src%2FMadeBy.js) and start playing with it.
 
-You can add the `index.js` code to your project as a component, or go [here](https://stackblitz.com/edit/react-vjhinx?file=src%2FMadeBy.js) or you can link a test `create-react-app` project to `react-made-by` library. To do the link, follow these steps:
+You can add the `example/src/MadeBy.js` file to your project as a component, or you can link a test `create-react-app` project to `react-made-by` library. To do the link, follow these steps:
 Given that you are at `/app/` and `react-made-by` is at this directory `/app/react-made-by`:
 ```bash
 npx create-react-app test-react-made-by
